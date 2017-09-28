@@ -10,18 +10,18 @@ import org.springframework.web.client.RestTemplate;
 @Configuration
 public class ApplicationConfig {
 
-@Named
-static class JerseyConfig extends ResourceConfig {
-public JerseyConfig() {
-	this.packages("com.citi.rest");}
-}
+	@Named
+	static class JerseyConfig extends ResourceConfig {
+		public JerseyConfig() {
+			this.packages("com.citi.rest");
+		}
+	}
 
+	@Bean
+	public RestTemplate restTemplate() {
+		RestTemplate restTemplate = new RestTemplate();
 
-@Bean
-public RestTemplate restTemplate() {
-RestTemplate restTemplate = new RestTemplate();
-
-return restTemplate;
-}
+		return restTemplate;
+	}
 
 }
