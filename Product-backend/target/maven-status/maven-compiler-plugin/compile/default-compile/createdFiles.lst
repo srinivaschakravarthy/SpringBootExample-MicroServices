@@ -1,0 +1,5 @@
+com\citi\config\ApplicationConfig$JerseyConfig.class
+com\citi\config\ApplicationConfig.class
+com\citi\rest\ProductRest.class
+com\citi\rest\Product.class
+com\citi\Application.class
